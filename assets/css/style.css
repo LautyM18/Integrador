@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borderbox;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background-color: #181818;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    display: grid;
+    align-items: center;
+
+}
+
+.box-nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.hs-nav {
+    display: flex;
+    gap: 15px;
+
+}
+
+.home-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #242424;
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    opacity: 80%;
+}
+
+.home-box:hover {
+    opacity: 100%;
+}
+
+
+.search-nav {
+    display: flex;
+    align-items: center;
+    opacity: 80%;
+}
+
+.search-box {
+    background-color: #242424;
+    color: #fff;
+    width: 395px;
+    height: 48px;
+    border: 0;
+    border-radius: 500px;
+    margin-block: 0px;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    padding-left: 45px;
+}
+
+.search-box {
+    outline: 0;
+    line-height: 40px;
+    cursor: text;
+    text-align: start;
+}
+
+.search-nav:hover {
+    opacity: 100%;
+}
+
+.search-nav input:focus {
+    outline: 1px solid #fff;
+    opacity: 100%;
+}
+
+.lupa-box {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    padding-left: 13px;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+.icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px 0 0;
+}
+
+.menu-box {
+    position: fixed;
+    top: 65px;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    display: none;
+}
+
+.menu-box ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-left: 20px;
+    font-size: large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu-box a {
+    color: #fff;
+}
+
+.menu-toggle {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+}
+
+#menu-burger:checked + .menu-box{
+    display: flex;
+}
+
+#menu-burger {
+    display: none;
+}
+
+body {
+    background-color: #212529;
+}
+
+.section-dest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.dimg-box {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 100px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.barra1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    opacity: 60%;
+    background-color: rgba(0, 0, 0, .5);
+    left: 0;
+}
+
+
+.barra1:hover {
+    opacity: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.barra2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    opacity: 60%;
+    background-color: rgba(0, 0, 0, .5);
+    right: 0;
+}
+
+
+.barra2:hover {
+    opacity: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.puntos { 
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    bottom: 10px;
+    gap: 5px;
+    opacity: 50%;
+    cursor: pointer;
+}
